@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10E013A13CDEFD384EFFEC8A6908A6D5 /* Pods-RFIDRacing-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E67D5B60D883EA12A91A6B8CEB820885 /* Pods-RFIDRacing-dummy.m */; };
+		11A90470782B53B93F51AB9E8367E0C2 /* SBJson4.h in Headers */ = {isa = PBXBuildFile; fileRef = 43D7F80C7E51B58480645147D8E44C15 /* SBJson4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1881FBBA4F640F77590686CDF2A2F88B /* Pods-RFIDRacing-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E686D4A2726AC93250A84AE35FB46937 /* Pods-RFIDRacing-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F2F56EA01A5DF6F0A62DD9021FF56AF /* SBJson4Writer.h in Headers */ = {isa = PBXBuildFile; fileRef = A56EF253214D7D42C41FBCCEF7B7F3CE /* SBJson4Writer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25F988584B504F2CBE80A6F07116B5EB /* SBJson-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D84C56F2006C6F69444F765E346E3 /* SBJson-dummy.m */; };
+		26377C88C75B999B10CA59C925229977 /* SBJson4StreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = A1395599946198EABCAB6C63C4E3F74E /* SBJson4StreamWriterState.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		376506E1BC656EA79E1CE7A9D02F3135 /* SBJson-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE2C88D80C761BDE4204BE1EE530C2E7 /* SBJson-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40D0350DADEFF2329FED5865212BEFA3 /* SBJson4StreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 92640BE4DF8442F1AC541EAF9854ABE8 /* SBJson4StreamWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		423F2B94F31F669C1F4D126DA37536AC /* SBJson4Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEB341E81EF0B3F5A794C11BF370378 /* SBJson4Writer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4BF897D3CEE3F1985BB521B2BB72B057 /* SBJson4StreamTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2518E5CF3C87418B207192197E9C2B5C /* SBJson4StreamTokeniser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4EF90368596D1F71E4E03F1C2D327E8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		6256E13204D45E3C762543F5E4904DA8 /* SBJson4StreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF6758189F7BDF53F6DC1B7FDE0D89C /* SBJson4StreamWriter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		63065B6A647082AA04BF6E554991F021 /* SBJson4StreamTokeniser.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E477168D01CD1511530665F3F12349 /* SBJson4StreamTokeniser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E003B2424513BB6FA7509524CE2E8BE /* SBJson4Parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 34CA1310D11900CDBA064B4B57E9D699 /* SBJson4Parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83DEBF63E32527A96DDA5667C12F51D7 /* SBJson4StreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = D72CE4458196E8FF64909B67536D2844 /* SBJson4StreamParserState.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9CBF357AC896AE08EE8E8287E91E846F /* SBJson4StreamWriterState.h in Headers */ = {isa = PBXBuildFile; fileRef = DD31837904E174F1281FB9CEE5678676 /* SBJson4StreamWriterState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A5CBD1F05F80F579F23414944AF0C8E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		E4DAF4667892A774BAE7B5EB794A9728 /* SBJson4StreamParserState.h in Headers */ = {isa = PBXBuildFile; fileRef = 8914EB9B29514783F35CCD5F801C0A1E /* SBJson4StreamParserState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F472537B29B6E38B2A4970AAB3FEFAE1 /* SBJson4StreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = ECB6F9866D03BE69AB764F8CA42FA184 /* SBJson4StreamParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F91FDCA5EEB6196C7E94BCD483C27730 /* SBJson4StreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EBCE738AA8060D8CBD6DA86A068ABE /* SBJson4StreamParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FA6AC0025AC5A020A7736669D09A8081 /* SBJson4Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E2E2E6C07CB5C6A487DDAF5D893C37 /* SBJson4Parser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4716A2FCD838B444398D80B93C96A63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF5217954F7329824FA9B354D2C19B40;
+			remoteInfo = SBJson;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1993B323F1428BF34AA9AAFC549FFF35 /* Pods_RFIDRacing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RFIDRacing.framework; path = "Pods-RFIDRacing.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2518E5CF3C87418B207192197E9C2B5C /* SBJson4StreamTokeniser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson4StreamTokeniser.m; path = Classes/SBJson4StreamTokeniser.m; sourceTree = "<group>"; };
+		2B5AF126F38CEECFE90CA93E9990CF76 /* SBJson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SBJson.framework; path = SBJson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34CA1310D11900CDBA064B4B57E9D699 /* SBJson4Parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4Parser.h; path = Classes/SBJson4Parser.h; sourceTree = "<group>"; };
+		36312E7971D6ABF2FE1F28687643F369 /* SBJson-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SBJson-prefix.pch"; sourceTree = "<group>"; };
+		37462974F4A0F123531666B898656935 /* Pods-RFIDRacing-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RFIDRacing-acknowledgements.plist"; sourceTree = "<group>"; };
+		3C008B4DE9DF406DF24825919F58791D /* Pods-RFIDRacing-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RFIDRacing-resources.sh"; sourceTree = "<group>"; };
+		43D7F80C7E51B58480645147D8E44C15 /* SBJson4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4.h; path = Classes/SBJson4.h; sourceTree = "<group>"; };
+		4477AF080C808A734B619EB2E14756CE /* SBJson.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SBJson.xcconfig; sourceTree = "<group>"; };
+		4DF6758189F7BDF53F6DC1B7FDE0D89C /* SBJson4StreamWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson4StreamWriter.m; path = Classes/SBJson4StreamWriter.m; sourceTree = "<group>"; };
+		5EEB341E81EF0B3F5A794C11BF370378 /* SBJson4Writer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson4Writer.m; path = Classes/SBJson4Writer.m; sourceTree = "<group>"; };
+		86CD20B305296F73F9BD7AA1EFD4DFAF /* Pods-RFIDRacing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RFIDRacing.release.xcconfig"; sourceTree = "<group>"; };
+		8914EB9B29514783F35CCD5F801C0A1E /* SBJson4StreamParserState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4StreamParserState.h; path = Classes/SBJson4StreamParserState.h; sourceTree = "<group>"; };
+		92640BE4DF8442F1AC541EAF9854ABE8 /* SBJson4StreamWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4StreamWriter.h; path = Classes/SBJson4StreamWriter.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93E2E2E6C07CB5C6A487DDAF5D893C37 /* SBJson4Parser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson4Parser.m; path = Classes/SBJson4Parser.m; sourceTree = "<group>"; };
+		9773A10DAE74059AE6E26F275C397CE8 /* Pods-RFIDRacing.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RFIDRacing.modulemap"; sourceTree = "<group>"; };
+		99EBCE738AA8060D8CBD6DA86A068ABE /* SBJson4StreamParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson4StreamParser.m; path = Classes/SBJson4StreamParser.m; sourceTree = "<group>"; };
+		A1395599946198EABCAB6C63C4E3F74E /* SBJson4StreamWriterState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson4StreamWriterState.m; path = Classes/SBJson4StreamWriterState.m; sourceTree = "<group>"; };
+		A56EF253214D7D42C41FBCCEF7B7F3CE /* SBJson4Writer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4Writer.h; path = Classes/SBJson4Writer.h; sourceTree = "<group>"; };
+		A9E477168D01CD1511530665F3F12349 /* SBJson4StreamTokeniser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4StreamTokeniser.h; path = Classes/SBJson4StreamTokeniser.h; sourceTree = "<group>"; };
+		B4139816EB99A655E0E1C4FDDB89C655 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B41D84C56F2006C6F69444F765E346E3 /* SBJson-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SBJson-dummy.m"; sourceTree = "<group>"; };
+		C16BCA71EEBD9302DB2F96DBC3611E48 /* Pods-RFIDRacing-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RFIDRacing-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C9999FBCFA391CF5A16770F4A9180D2B /* Pods-RFIDRacing-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RFIDRacing-frameworks.sh"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CBCD2EDCBF0C76136B1474403C717B8E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1841FA93873690517C0A7A607EC8E77 /* SBJson.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SBJson.modulemap; sourceTree = "<group>"; };
+		D72CE4458196E8FF64909B67536D2844 /* SBJson4StreamParserState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson4StreamParserState.m; path = Classes/SBJson4StreamParserState.m; sourceTree = "<group>"; };
+		DC8B9DBEAE5BF0FC733D4A7FA9F0D1EE /* Pods-RFIDRacing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RFIDRacing.debug.xcconfig"; sourceTree = "<group>"; };
+		DD31837904E174F1281FB9CEE5678676 /* SBJson4StreamWriterState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4StreamWriterState.h; path = Classes/SBJson4StreamWriterState.h; sourceTree = "<group>"; };
+		DE2C88D80C761BDE4204BE1EE530C2E7 /* SBJson-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SBJson-umbrella.h"; sourceTree = "<group>"; };
+		E67D5B60D883EA12A91A6B8CEB820885 /* Pods-RFIDRacing-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RFIDRacing-dummy.m"; sourceTree = "<group>"; };
+		E686D4A2726AC93250A84AE35FB46937 /* Pods-RFIDRacing-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RFIDRacing-umbrella.h"; sourceTree = "<group>"; };
+		ECB6F9866D03BE69AB764F8CA42FA184 /* SBJson4StreamParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4StreamParser.h; path = Classes/SBJson4StreamParser.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B672CFFCF4EE195AF6358FA59A2955B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CBD1F05F80F579F23414944AF0C8E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACEF8DBB93D097EE13B86AD0BF93B7D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF90368596D1F71E4E03F1C2D327E8F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		229CB278F53CC6408974195B5FEE5DCC /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				43D7F80C7E51B58480645147D8E44C15 /* SBJson4.h */,
+				34CA1310D11900CDBA064B4B57E9D699 /* SBJson4Parser.h */,
+				93E2E2E6C07CB5C6A487DDAF5D893C37 /* SBJson4Parser.m */,
+				ECB6F9866D03BE69AB764F8CA42FA184 /* SBJson4StreamParser.h */,
+				99EBCE738AA8060D8CBD6DA86A068ABE /* SBJson4StreamParser.m */,
+				8914EB9B29514783F35CCD5F801C0A1E /* SBJson4StreamParserState.h */,
+				D72CE4458196E8FF64909B67536D2844 /* SBJson4StreamParserState.m */,
+				A9E477168D01CD1511530665F3F12349 /* SBJson4StreamTokeniser.h */,
+				2518E5CF3C87418B207192197E9C2B5C /* SBJson4StreamTokeniser.m */,
+				92640BE4DF8442F1AC541EAF9854ABE8 /* SBJson4StreamWriter.h */,
+				4DF6758189F7BDF53F6DC1B7FDE0D89C /* SBJson4StreamWriter.m */,
+				DD31837904E174F1281FB9CEE5678676 /* SBJson4StreamWriterState.h */,
+				A1395599946198EABCAB6C63C4E3F74E /* SBJson4StreamWriterState.m */,
+				A56EF253214D7D42C41FBCCEF7B7F3CE /* SBJson4Writer.h */,
+				5EEB341E81EF0B3F5A794C11BF370378 /* SBJson4Writer.m */,
+				997D09587A8CF3141726DD50FF5163C1 /* Support Files */,
+			);
+			name = SBJson;
+			path = SBJson;
+			sourceTree = "<group>";
+		};
+		534369D9DC54489714275CBB7B8DB47B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1993B323F1428BF34AA9AAFC549FFF35 /* Pods_RFIDRacing.framework */,
+				2B5AF126F38CEECFE90CA93E9990CF76 /* SBJson.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				B35A2BA193447E4ED908EA5A444644C2 /* Pods */,
+				534369D9DC54489714275CBB7B8DB47B /* Products */,
+				E940B2B0A78F089DCD940B894673F020 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		997D09587A8CF3141726DD50FF5163C1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBCD2EDCBF0C76136B1474403C717B8E /* Info.plist */,
+				D1841FA93873690517C0A7A607EC8E77 /* SBJson.modulemap */,
+				4477AF080C808A734B619EB2E14756CE /* SBJson.xcconfig */,
+				B41D84C56F2006C6F69444F765E346E3 /* SBJson-dummy.m */,
+				36312E7971D6ABF2FE1F28687643F369 /* SBJson-prefix.pch */,
+				DE2C88D80C761BDE4204BE1EE530C2E7 /* SBJson-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SBJson";
+			sourceTree = "<group>";
+		};
+		B011C775A258AA41BA84FACC6590FBE0 /* Pods-RFIDRacing */ = {
+			isa = PBXGroup;
+			children = (
+				B4139816EB99A655E0E1C4FDDB89C655 /* Info.plist */,
+				9773A10DAE74059AE6E26F275C397CE8 /* Pods-RFIDRacing.modulemap */,
+				C16BCA71EEBD9302DB2F96DBC3611E48 /* Pods-RFIDRacing-acknowledgements.markdown */,
+				37462974F4A0F123531666B898656935 /* Pods-RFIDRacing-acknowledgements.plist */,
+				E67D5B60D883EA12A91A6B8CEB820885 /* Pods-RFIDRacing-dummy.m */,
+				C9999FBCFA391CF5A16770F4A9180D2B /* Pods-RFIDRacing-frameworks.sh */,
+				3C008B4DE9DF406DF24825919F58791D /* Pods-RFIDRacing-resources.sh */,
+				E686D4A2726AC93250A84AE35FB46937 /* Pods-RFIDRacing-umbrella.h */,
+				DC8B9DBEAE5BF0FC733D4A7FA9F0D1EE /* Pods-RFIDRacing.debug.xcconfig */,
+				86CD20B305296F73F9BD7AA1EFD4DFAF /* Pods-RFIDRacing.release.xcconfig */,
+			);
+			name = "Pods-RFIDRacing";
+			path = "Target Support Files/Pods-RFIDRacing";
+			sourceTree = "<group>";
+		};
+		B35A2BA193447E4ED908EA5A444644C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				229CB278F53CC6408974195B5FEE5DCC /* SBJson */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E940B2B0A78F089DCD940B894673F020 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B011C775A258AA41BA84FACC6590FBE0 /* Pods-RFIDRacing */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B242CCDD744A7687FEDF03D1D8A50170 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1881FBBA4F640F77590686CDF2A2F88B /* Pods-RFIDRacing-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6FA0EEAF78D81D70749DE9A31826ED0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376506E1BC656EA79E1CE7A9D02F3135 /* SBJson-umbrella.h in Headers */,
+				11A90470782B53B93F51AB9E8367E0C2 /* SBJson4.h in Headers */,
+				7E003B2424513BB6FA7509524CE2E8BE /* SBJson4Parser.h in Headers */,
+				F472537B29B6E38B2A4970AAB3FEFAE1 /* SBJson4StreamParser.h in Headers */,
+				E4DAF4667892A774BAE7B5EB794A9728 /* SBJson4StreamParserState.h in Headers */,
+				63065B6A647082AA04BF6E554991F021 /* SBJson4StreamTokeniser.h in Headers */,
+				40D0350DADEFF2329FED5865212BEFA3 /* SBJson4StreamWriter.h in Headers */,
+				9CBF357AC896AE08EE8E8287E91E846F /* SBJson4StreamWriterState.h in Headers */,
+				1F2F56EA01A5DF6F0A62DD9021FF56AF /* SBJson4Writer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		14D236F8D1F76060CE707A718224C592 /* Pods-RFIDRacing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63DE2D163BBFEC55B9F251014367175B /* Build configuration list for PBXNativeTarget "Pods-RFIDRacing" */;
+			buildPhases = (
+				97E4FA84AE14264639B3504C612B8A1D /* Sources */,
+				9B672CFFCF4EE195AF6358FA59A2955B /* Frameworks */,
+				B242CCDD744A7687FEDF03D1D8A50170 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C637465DDBC9BE10FA7BC87C82C1E6A /* PBXTargetDependency */,
+			);
+			name = "Pods-RFIDRacing";
+			productName = "Pods-RFIDRacing";
+			productReference = 1993B323F1428BF34AA9AAFC549FFF35 /* Pods_RFIDRacing.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DF5217954F7329824FA9B354D2C19B40 /* SBJson */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C65943F00A94BF9216E471A59EB95BBB /* Build configuration list for PBXNativeTarget "SBJson" */;
+			buildPhases = (
+				7541EB1E5498DA2224C1F614C102B7A8 /* Sources */,
+				ACEF8DBB93D097EE13B86AD0BF93B7D8 /* Frameworks */,
+				E6FA0EEAF78D81D70749DE9A31826ED0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SBJson;
+			productName = SBJson;
+			productReference = 2B5AF126F38CEECFE90CA93E9990CF76 /* SBJson.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 534369D9DC54489714275CBB7B8DB47B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14D236F8D1F76060CE707A718224C592 /* Pods-RFIDRacing */,
+				DF5217954F7329824FA9B354D2C19B40 /* SBJson */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7541EB1E5498DA2224C1F614C102B7A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25F988584B504F2CBE80A6F07116B5EB /* SBJson-dummy.m in Sources */,
+				FA6AC0025AC5A020A7736669D09A8081 /* SBJson4Parser.m in Sources */,
+				F91FDCA5EEB6196C7E94BCD483C27730 /* SBJson4StreamParser.m in Sources */,
+				83DEBF63E32527A96DDA5667C12F51D7 /* SBJson4StreamParserState.m in Sources */,
+				4BF897D3CEE3F1985BB521B2BB72B057 /* SBJson4StreamTokeniser.m in Sources */,
+				6256E13204D45E3C762543F5E4904DA8 /* SBJson4StreamWriter.m in Sources */,
+				26377C88C75B999B10CA59C925229977 /* SBJson4StreamWriterState.m in Sources */,
+				423F2B94F31F669C1F4D126DA37536AC /* SBJson4Writer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97E4FA84AE14264639B3504C612B8A1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10E013A13CDEFD384EFFEC8A6908A6D5 /* Pods-RFIDRacing-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C637465DDBC9BE10FA7BC87C82C1E6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SBJson;
+			target = DF5217954F7329824FA9B354D2C19B40 /* SBJson */;
+			targetProxy = B4716A2FCD838B444398D80B93C96A63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		55A8739C41FBC684A99C4BD2E3063F70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC8B9DBEAE5BF0FC733D4A7FA9F0D1EE /* Pods-RFIDRacing.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RFIDRacing/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RFIDRacing/Pods-RFIDRacing.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RFIDRacing;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		79B0C2E66EFA9917ED6EDDB8FC6A7684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		809A911C388C5957212729947EE04C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4477AF080C808A734B619EB2E14756CE /* SBJson.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SBJson/SBJson-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SBJson/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SBJson/SBJson.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SBJson;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		88429BD8BAC976E407DD765DC22EF197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86CD20B305296F73F9BD7AA1EFD4DFAF /* Pods-RFIDRacing.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RFIDRacing/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RFIDRacing/Pods-RFIDRacing.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RFIDRacing;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C2AC28B67BE3D6B3AD83ABC87FA5051A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4477AF080C808A734B619EB2E14756CE /* SBJson.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SBJson/SBJson-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SBJson/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SBJson/SBJson.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SBJson;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF7953F66E785E8876EB4D370D777D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7953F66E785E8876EB4D370D777D50 /* Debug */,
+				79B0C2E66EFA9917ED6EDDB8FC6A7684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63DE2D163BBFEC55B9F251014367175B /* Build configuration list for PBXNativeTarget "Pods-RFIDRacing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55A8739C41FBC684A99C4BD2E3063F70 /* Debug */,
+				88429BD8BAC976E407DD765DC22EF197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C65943F00A94BF9216E471A59EB95BBB /* Build configuration list for PBXNativeTarget "SBJson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2AC28B67BE3D6B3AD83ABC87FA5051A /* Debug */,
+				809A911C388C5957212729947EE04C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
