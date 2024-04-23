@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50413D8A1E72F665002D4A13 /* RFIDRacing.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 50413D891E72F665002D4A13 /* RFIDRacing.xcworkspace */; };
+		5089CC201E82361000474841 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5089CC1F1E82361000474841 /* icon.png */; };
 		6C448B050DF1D8B10264BA89 /* Pods_RFIDRacing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10537FDF7FC7B8AE53CCDC53 /* Pods_RFIDRacing.framework */; };
 		7F0ECA171DE1F172002E2916 /* DeviceMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0ECA161DE1F172002E2916 /* DeviceMemory.m */; };
 		7F1CEEAC1E5D9CF00026CF52 /* loader_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1CEEAB1E5D9CF00026CF52 /* loader_background.png */; };
@@ -17,7 +19,6 @@
 		7F1CEEBE1E5E83930026CF52 /* icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1CEEB51E5E83930026CF52 /* icon-76.png */; };
 		7F1CEEBF1E5E83930026CF52 /* icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1CEEB61E5E83930026CF52 /* icon-Small.png */; };
 		7F1CEEC01E5E83930026CF52 /* icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1CEEB71E5E83930026CF52 /* icon-Small@2x.png */; };
-		7F1CEEC11E5E83930026CF52 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1CEEB81E5E83930026CF52 /* icon.png */; };
 		7F1CEEC21E5E83930026CF52 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1CEEB91E5E83930026CF52 /* icon@2x.png */; };
 		7F1CEEC31E5E83930026CF52 /* icon40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1CEEBA1E5E83930026CF52 /* icon40@2x.png */; };
 		7F1CEEC41E5E83930026CF52 /* icon76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1CEEBB1E5E83930026CF52 /* icon76@2x.png */; };
@@ -70,6 +71,8 @@
 
 /* Begin PBXFileReference section */
 		10537FDF7FC7B8AE53CCDC53 /* Pods_RFIDRacing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RFIDRacing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50413D891E72F665002D4A13 /* RFIDRacing.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = RFIDRacing.xcworkspace; sourceTree = "<group>"; };
+		5089CC1F1E82361000474841 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		7F0ECA151DE1F172002E2916 /* DeviceMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceMemory.h; path = common/DeviceMemory.h; sourceTree = "<group>"; };
 		7F0ECA161DE1F172002E2916 /* DeviceMemory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceMemory.m; path = common/DeviceMemory.m; sourceTree = "<group>"; };
 		7F1CEEAB1E5D9CF00026CF52 /* loader_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loader_background.png; path = images/loader_background.png; sourceTree = "<group>"; };
@@ -81,7 +84,6 @@
 		7F1CEEB51E5E83930026CF52 /* icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-76.png"; path = "images/icon-76.png"; sourceTree = "<group>"; };
 		7F1CEEB61E5E83930026CF52 /* icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-Small.png"; path = "images/icon-Small.png"; sourceTree = "<group>"; };
 		7F1CEEB71E5E83930026CF52 /* icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-Small@2x.png"; path = "images/icon-Small@2x.png"; sourceTree = "<group>"; };
-		7F1CEEB81E5E83930026CF52 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = images/icon.png; sourceTree = "<group>"; };
 		7F1CEEB91E5E83930026CF52 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "images/icon@2x.png"; sourceTree = "<group>"; };
 		7F1CEEBA1E5E83930026CF52 /* icon40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon40@2x.png"; path = "images/icon40@2x.png"; sourceTree = "<group>"; };
 		7F1CEEBB1E5E83930026CF52 /* icon76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon76@2x.png"; path = "images/icon76@2x.png"; sourceTree = "<group>"; };
@@ -319,7 +321,6 @@
 				7F1CEEB51E5E83930026CF52 /* icon-76.png */,
 				7F1CEEB61E5E83930026CF52 /* icon-Small.png */,
 				7F1CEEB71E5E83930026CF52 /* icon-Small@2x.png */,
-				7F1CEEB81E5E83930026CF52 /* icon.png */,
 				7F1CEEB91E5E83930026CF52 /* icon@2x.png */,
 				7F1CEEBA1E5E83930026CF52 /* icon40@2x.png */,
 				7F1CEEBB1E5E83930026CF52 /* icon76@2x.png */,
@@ -375,6 +376,7 @@
 		7FEED14E1DDA3CA5004BE234 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5089CC1F1E82361000474841 /* icon.png */,
 				7FEED14F1DDA3CA5004BE234 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -392,6 +394,7 @@
 		E79B17B3E2A0E0E2DCA8B831 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50413D891E72F665002D4A13 /* RFIDRacing.xcworkspace */,
 				7FE3EAEA1E600A970082ADF0 /* DropboxSDK.framework */,
 				10537FDF7FC7B8AE53CCDC53 /* Pods_RFIDRacing.framework */,
 			);
@@ -432,8 +435,8 @@
 				TargetAttributes = {
 					7FEED14A1DDA3CA4004BE234 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = D4J7AW2S69;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 8E3QG8HX2C;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -462,17 +465,18 @@
 			files = (
 				7F1CEEBD1E5E83930026CF52 /* icon-60@2x.png in Resources */,
 				7F1CEEB21E5E4C270026CF52 /* UIIPAddresstextfield.xib in Resources */,
+				50413D8A1E72F665002D4A13 /* RFIDRacing.xcworkspace in Resources */,
 				7FEED15E1DDA3CA5004BE234 /* LaunchScreen.storyboard in Resources */,
 				7FB402AB1E50EBFD009541CB /* btn_checkbox_deactive.png in Resources */,
 				7F236D421DDED5A6001CD300 /* logo.png in Resources */,
 				7FEED15B1DDA3CA5004BE234 /* Assets.xcassets in Resources */,
 				7FEED1591DDA3CA5004BE234 /* Main.storyboard in Resources */,
+				5089CC201E82361000474841 /* icon.png in Resources */,
 				7FB402AD1E50EF19009541CB /* combo-box-end.png in Resources */,
 				7F1CEEBC1E5E83930026CF52 /* icon-40.png in Resources */,
 				7F1CEEC31E5E83930026CF52 /* icon40@2x.png in Resources */,
 				7FB402AA1E50EBFD009541CB /* btn_checkbox_active.png in Resources */,
 				7F1CEEAC1E5D9CF00026CF52 /* loader_background.png in Resources */,
-				7F1CEEC11E5E83930026CF52 /* icon.png in Resources */,
 				7FB402A71E50E854009541CB /* combo-box-hi.png in Resources */,
 				7F1CEEC01E5E83930026CF52 /* icon-Small@2x.png in Resources */,
 				7FE3EAF01E602E130082ADF0 /* btn_dropbox.jpg in Resources */,
@@ -697,25 +701,25 @@
 			baseConfigurationReference = F4387C80EDB03776081DDD40 /* Pods-RFIDRacing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = icon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = D4J7AW2S69;
+				DEVELOPMENT_TEAM = 8E3QG8HX2C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BlutoothManager",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"COCOAPODS=1",
-					"TESTMODE=1",
-					"REALEASMODE=0",
+					"TESTMODE=0",
+					"REALEASMODE=1",
 				);
 				INFOPLIST_FILE = BlutoothManager/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.PaulGeller.Mercury;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.RFIDRacing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "dd8ec22b-2ed4-4611-b98f-f3f7c256b8de";
-				PROVISIONING_PROFILE_SPECIFIER = All_Dev_160129;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -724,9 +728,9 @@
 			baseConfigurationReference = 9392BF9486122560CF9EF737 /* Pods-RFIDRacing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = icon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = D4J7AW2S69;
+				DEVELOPMENT_TEAM = 8E3QG8HX2C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BlutoothManager",
@@ -739,10 +743,10 @@
 				INFOPLIST_FILE = BlutoothManager/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.PaulGeller.Mercury;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.RFIDRacing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "dd8ec22b-2ed4-4611-b98f-f3f7c256b8de";
-				PROVISIONING_PROFILE_SPECIFIER = All_Dev_160129;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

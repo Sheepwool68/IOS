@@ -32,6 +32,8 @@
     int packageNumber;
     NSString * m_packageData;
     
+    NSString * writeData;
+    
 }
 @property (weak, nonatomic) IBOutlet UITextField *edt_shareType;
 @property (weak, nonatomic) IBOutlet UITextField *edt_from;
@@ -81,6 +83,11 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 - (IBAction)onShare:(id)sender {
+    
+    AppDelegate * appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [appDelegate showLoader];
+    
+    writeData = @"";
     NSDateFormatter * defaultFormatter = [NSDateFormatter new];
     [defaultFormatter setDateFormat:@"MMM dd yyyy hh:mm aa"];
     NSDate * startDate = nil;
@@ -100,30 +107,32 @@
     [cmdData appendBytes:&commadHead length:1];
     fileName = @"report";
     if(startDate){
-        NSDate * Date1980 = [self get1980Date];
-        NSTimeInterval timeInterval = [startDate timeIntervalSinceDate:Date1980];
-        [cmdData appendBytes:&timeInterval length:sizeof(timeInterval)];
+        NSDate * Date1980 = [self get2017Date];
+        long timeInterval = (long)[startDate timeIntervalSinceDate:Date1980];
+        [cmdData appendBytes:&timeInterval length:4];
         fileName = [fileName stringByAppendingFormat:@"_from_%@",self.edt_from.text];
     }else{
-        int commandCode = 0x30;
-        [cmdData appendBytes:&commandCode length:1];
+        char commandCode[4] = {0x00, 0x00, 0x00, 0x00};
+        [cmdData appendBytes:&commandCode length:4];
     }
     char commandLine = 0x0d;
     [cmdData appendBytes:&commandLine length:1];
     if(edDate){
-        NSDate * Date1980 = [self get1980Date];
-        NSTimeInterval timeInterval = [edDate timeIntervalSinceDate:Date1980];
-        [cmdData appendBytes:&timeInterval length:sizeof(timeInterval)];
+        NSDate * Date1980 = [self get2017Date];
+        long timeInterval = (long)[edDate timeIntervalSinceDate:Date1980];
+        [cmdData appendBytes:&timeInterval length:4];
         fileName = [fileName stringByAppendingFormat:@"_to_%@",self.edt_to.text];
     }else{
-        int commandCode = 0x30;
-        [cmdData appendBytes:&commandCode length:1];
+        char commandCode[4] = {0x00, 0x00, 0x00, 0x00};
+        [cmdData appendBytes:&commandCode length:4];
     }
     char endn = '\n';
     [cmdData appendBytes:&endn length:sizeof(endn)];
     [self sendCMD:(char*)[cmdData bytes] :cmdData.length];
     fileName = [fileName stringByAppendingFormat:@"%@",@".txt"];
     [[DeviceMemory createInstance] setShared_fileName:fileName];
+    
+    
 }
 - (void)writeToFile:(NSString*)date
 {
@@ -131,10 +140,20 @@
     NSString * localPath = [localDit stringByAppendingPathComponent:fileName];
     [date writeToFile:localPath atomically:YES encoding:NSUTF8StringEncoding error:nil];
 }
+- (NSDate*)get2017Date
+{
+    NSString * string = @"01/01/2017 00:00:00";
+    NSDateFormatter * formatter = [NSDateFormatter new];
+    [formatter setTimeZone:[NSTimeZone systemTimeZone]];
+    [formatter setDateFormat:@"dd/MM/yyyy hh:mm:ss"];
+    return [formatter dateFromString:string];
+}
+
 - (NSDate*)get1980Date
 {
     NSString * string = @"01/01/1980 00:00:00";
     NSDateFormatter * formatter = [NSDateFormatter new];
+    [formatter setTimeZone:[NSTimeZone systemTimeZone]];
     [formatter setDateFormat:@"dd/MM/yyyy hh:mm:ss"];
     return [formatter dateFromString:string];
 }
@@ -144,7 +163,8 @@
     double timeInterval = (double)interval;
     NSDate * currentDate = [NSDate dateWithTimeInterval:timeInterval sinceDate:date1980];
     NSDateFormatter * formatter = [NSDateFormatter new];
-    [formatter setDateFormat:@"dd/MM/yyyy hh:mm:ss"];
+    [formatter setDateFormat:@"dd/MM/yyyy   HH:mm:ss"];
+    [formatter setTimeZone:[NSTimeZone systemTimeZone]];
     return [formatter stringFromDate:currentDate];
 }
 - (IBAction)onSelectType:(id)sender {
@@ -163,7 +183,7 @@
         [self.edt_shareType setText:@"Select Date"];
         [self.view_container setHidden:NO];
         NSDateFormatter * defaultFormatter = [NSDateFormatter new];
-        [defaultFormatter setDateFormat:@"MMM dd yyyy hh:mm aa"];
+        [defaultFormatter setDateFormat:@"MMM dd yyyy HH:mm aa"];
         NSString * dateString = [defaultFormatter stringFromDate:self.dataPicker.date];
         [self.edt_from setText:dateString];
         [self.edt_from setTextColor:[UIColor greenColor]];
@@ -221,6 +241,20 @@
         if(value){
             responseData = [responseData stringByAppendingString:value];
             BOOL containsEnd = NO;
+            
+            if([responseData containsString:@"553030303030300a"])/// end
+            {
+                AppDelegate * appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+                responseData = @"";
+                if(writeData.length > 0){
+                    [self writeToFile:writeData];
+                    
+                    [appDelegate sharedTxtFile];
+                }
+                [appDelegate hideLoader];
+                return;
+            }
+            
             for(int i=0;i<responseData.length;i+=2){
                 NSString * subString = [[responseData substringFromIndex:i] substringToIndex:2];
                 if([subString isEqualToString:@"0a"]){
@@ -228,6 +262,8 @@
                 }
             }
             if(containsEnd){
+                
+                
                 
                 NSString * string = [responseData stringByReplacingOccurrencesOfString:@"55" withString:@""];
                 string = [string stringByReplacingOccurrencesOfString:@"0d" withString:@""];
@@ -238,16 +274,19 @@
                 NSData * cmdResponseData = [CommonAPI convertStringToHexData:string];
                 NSString * convertedString = [[NSString alloc] initWithData:cmdResponseData encoding:NSUTF8StringEncoding];
                 if(![convertedString containsString:@"0a"]){
+                    NSLog(@"error occur no 0a");
                     m_packageData = @"";
                     responseData = @"";
                     packageNumber --;
                     return;
                 }
-                convertedString = [convertedString stringByReplacingOccurrencesOfString:@"0a" withString:@""];
+//                convertedString = [convertedString stringByReplacingOccurrencesOfString:@"0a" withString:@""];
+                convertedString = [convertedString substringToIndex:convertedString.length - 2];
                 if(packageNumber == 2){
                     if(convertedString.length > 4){
                         convertedString = [convertedString substringFromIndex:4];
                     }else{
+                        NSLog(@"error occur length < 4");
                         m_packageData = @"";
                         responseData  = @"";
                         packageNumber --;
@@ -261,6 +300,10 @@
                     packageNumber = 0;
                     m_packageData = [NSString new];
                 }
+                
+                char command[1];
+                command[0] = 0x72;
+                [self sendCMD:command :1];
             }
         }
     }else if([response.function isEqualToString:@"didDisconnectPeripheral"]){
@@ -272,6 +315,7 @@
 {
     
     if(data.length >= 24){
+        NSLog(@"pass - %@",data);
         NSString * idValue = [[NSString alloc] initWithFormat:@"0x%@",[data substringWithRange:NSMakeRange(0, 4)]];
         NSString * chipValue = [[NSString alloc] initWithFormat:@"0x%@",[data substringWithRange:NSMakeRange(4, 8)]];
         NSString * timeValue = [[NSString alloc] initWithFormat:@"0x%@",[data substringWithRange:NSMakeRange(12, 8)]];
@@ -284,7 +328,14 @@
         short_milisecond = [self getValueFromString:milisecond];
         
         NSLog(@"id: %lu chip: %lu mili: %ld date:%@",short_id,long_chip,short_milisecond, [self dateStringFromInterval:long_time]);
+        if(!writeData)
+            writeData  = @"";
+        writeData = [writeData stringByAppendingString:[NSString stringWithFormat:@" %lu  %lu  %@  %lu \n",short_id, long_chip, [self dateStringFromInterval:long_time], short_milisecond]];
         
+        
+    }else{
+        NSLog(@"data length = %lu", (unsigned long)data.length);
+        NSLog(@"fail - %@",data);
     }
     
 }

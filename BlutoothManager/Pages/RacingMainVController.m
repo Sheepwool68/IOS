@@ -110,11 +110,11 @@ char commandIds[12] = {0x33,0x34,0x35,0x36,0x2C,0x1E,0x0c,0x21,0x25,0x23,0x09,0x
     scanCommand.cmdData = dict;
     [m_mainview sendCMDObject:scanCommand];
     
-//    AppDelegate * appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-//    [appDelegate showLoader];
-//    
-//    NSTimer * checkerTimer = [NSTimer new];
-//    checkerTimer = [NSTimer scheduledTimerWithTimeInterval:200.0 target:self selector:@selector(onCancel:) userInfo:nil repeats:NO];
+    AppDelegate * appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [appDelegate showLoader];
+    
+    NSTimer * checkerTimer = [NSTimer new];
+    checkerTimer = [NSTimer scheduledTimerWithTimeInterval:200.0 target:self selector:@selector(onCancel:) userInfo:nil repeats:NO];
 }
 - (void) onCancel:(id)sender
 {
@@ -223,8 +223,8 @@ char commandIds[12] = {0x33,0x34,0x35,0x36,0x2C,0x1E,0x0c,0x21,0x25,0x23,0x09,0x
 
 - (void) initializingUI
 {
-//    char intializeCommand1[3] = {'U',commandIds[action_index],0x01};
-//    [self sendCMD:intializeCommand1 :3];
+    char intializeCommand1[3] = {'U',commandIds[action_index],0x01};
+    [self sendCMD:intializeCommand1 :3];
 }
 
 - (IBAction)onSelectGating:(id)sender {
@@ -550,12 +550,12 @@ char commandIds[12] = {0x33,0x34,0x35,0x36,0x2C,0x1E,0x0c,0x21,0x25,0x23,0x09,0x
 {
     if([commandId isEqualToString:@"33"]){
         int ivalue = [value intValue];
-        ivalue = (ivalue - 180) * 100/(204-180);
+        //ivalue = (ivalue - 147) * 100/(200-147);
         if(ivalue < 0) ivalue = 0;
         if(ivalue > 100) ivalue = 100;
-        if(ivalue <= 33){
+        if(ivalue <= 20){
             [self.lbl_battery setTextColor:[UIColor redColor]];
-        }else if(33<ivalue && ivalue <= 66){
+        }else if(20<ivalue && ivalue <= 45){
             [self.lbl_battery setTextColor:[UIColor orangeColor]];
         }else{
             [self.lbl_battery setTextColor:[UIColor greenColor]];

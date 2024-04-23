@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		506E8E14206A34D0009C4776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506E8E13206A34D0009C4776 /* AppDelegate.swift */; };
+		506E8E16206A34D0009C4776 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506E8E15206A34D0009C4776 /* ViewController.swift */; };
+		506E8E19206A34D0009C4776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506E8E17206A34D0009C4776 /* Main.storyboard */; };
+		506E8E1B206A34D0009C4776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506E8E1A206A34D0009C4776 /* Assets.xcassets */; };
+		506E8E1E206A34D0009C4776 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506E8E1C206A34D0009C4776 /* LaunchScreen.storyboard */; };
+		506E8E29206A34D0009C4776 /* RFID_Joey_PhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506E8E28206A34D0009C4776 /* RFID_Joey_PhotoTests.swift */; };
+		506E8E34206A34D0009C4776 /* RFID_Joey_PhotoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506E8E33206A34D0009C4776 /* RFID_Joey_PhotoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		506E8E25206A34D0009C4776 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 506E8E08206A34D0009C4776 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 506E8E0F206A34D0009C4776;
+			remoteInfo = "RFID Joey Photo";
+		};
+		506E8E30206A34D0009C4776 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 506E8E08206A34D0009C4776 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 506E8E0F206A34D0009C4776;
+			remoteInfo = "RFID Joey Photo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		506E8E10206A34D0009C4776 /* RFID Joey Photo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RFID Joey Photo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		506E8E13206A34D0009C4776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		506E8E15206A34D0009C4776 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		506E8E18206A34D0009C4776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		506E8E1A206A34D0009C4776 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		506E8E1D206A34D0009C4776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		506E8E1F206A34D0009C4776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		506E8E24206A34D0009C4776 /* RFID Joey PhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RFID Joey PhotoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		506E8E28206A34D0009C4776 /* RFID_Joey_PhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFID_Joey_PhotoTests.swift; sourceTree = "<group>"; };
+		506E8E2A206A34D0009C4776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		506E8E2F206A34D0009C4776 /* RFID Joey PhotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RFID Joey PhotoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		506E8E33206A34D0009C4776 /* RFID_Joey_PhotoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFID_Joey_PhotoUITests.swift; sourceTree = "<group>"; };
+		506E8E35206A34D0009C4776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		506E8E0D206A34D0009C4776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506E8E21206A34D0009C4776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506E8E2C206A34D0009C4776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		506E8E07206A34D0009C4776 = {
+			isa = PBXGroup;
+			children = (
+				506E8E12206A34D0009C4776 /* RFID Joey Photo */,
+				506E8E27206A34D0009C4776 /* RFID Joey PhotoTests */,
+				506E8E32206A34D0009C4776 /* RFID Joey PhotoUITests */,
+				506E8E11206A34D0009C4776 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		506E8E11206A34D0009C4776 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				506E8E10206A34D0009C4776 /* RFID Joey Photo.app */,
+				506E8E24206A34D0009C4776 /* RFID Joey PhotoTests.xctest */,
+				506E8E2F206A34D0009C4776 /* RFID Joey PhotoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		506E8E12206A34D0009C4776 /* RFID Joey Photo */ = {
+			isa = PBXGroup;
+			children = (
+				506E8E13206A34D0009C4776 /* AppDelegate.swift */,
+				506E8E15206A34D0009C4776 /* ViewController.swift */,
+				506E8E17206A34D0009C4776 /* Main.storyboard */,
+				506E8E1A206A34D0009C4776 /* Assets.xcassets */,
+				506E8E1C206A34D0009C4776 /* LaunchScreen.storyboard */,
+				506E8E1F206A34D0009C4776 /* Info.plist */,
+			);
+			path = "RFID Joey Photo";
+			sourceTree = "<group>";
+		};
+		506E8E27206A34D0009C4776 /* RFID Joey PhotoTests */ = {
+			isa = PBXGroup;
+			children = (
+				506E8E28206A34D0009C4776 /* RFID_Joey_PhotoTests.swift */,
+				506E8E2A206A34D0009C4776 /* Info.plist */,
+			);
+			path = "RFID Joey PhotoTests";
+			sourceTree = "<group>";
+		};
+		506E8E32206A34D0009C4776 /* RFID Joey PhotoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				506E8E33206A34D0009C4776 /* RFID_Joey_PhotoUITests.swift */,
+				506E8E35206A34D0009C4776 /* Info.plist */,
+			);
+			path = "RFID Joey PhotoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		506E8E0F206A34D0009C4776 /* RFID Joey Photo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 506E8E38206A34D0009C4776 /* Build configuration list for PBXNativeTarget "RFID Joey Photo" */;
+			buildPhases = (
+				506E8E0C206A34D0009C4776 /* Sources */,
+				506E8E0D206A34D0009C4776 /* Frameworks */,
+				506E8E0E206A34D0009C4776 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RFID Joey Photo";
+			productName = "RFID Joey Photo";
+			productReference = 506E8E10206A34D0009C4776 /* RFID Joey Photo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		506E8E23206A34D0009C4776 /* RFID Joey PhotoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 506E8E3B206A34D0009C4776 /* Build configuration list for PBXNativeTarget "RFID Joey PhotoTests" */;
+			buildPhases = (
+				506E8E20206A34D0009C4776 /* Sources */,
+				506E8E21206A34D0009C4776 /* Frameworks */,
+				506E8E22206A34D0009C4776 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				506E8E26206A34D0009C4776 /* PBXTargetDependency */,
+			);
+			name = "RFID Joey PhotoTests";
+			productName = "RFID Joey PhotoTests";
+			productReference = 506E8E24206A34D0009C4776 /* RFID Joey PhotoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		506E8E2E206A34D0009C4776 /* RFID Joey PhotoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 506E8E3E206A34D0009C4776 /* Build configuration list for PBXNativeTarget "RFID Joey PhotoUITests" */;
+			buildPhases = (
+				506E8E2B206A34D0009C4776 /* Sources */,
+				506E8E2C206A34D0009C4776 /* Frameworks */,
+				506E8E2D206A34D0009C4776 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				506E8E31206A34D0009C4776 /* PBXTargetDependency */,
+			);
+			name = "RFID Joey PhotoUITests";
+			productName = "RFID Joey PhotoUITests";
+			productReference = 506E8E2F206A34D0009C4776 /* RFID Joey PhotoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		506E8E08206A34D0009C4776 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "RFID MAC";
+				TargetAttributes = {
+					506E8E0F206A34D0009C4776 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					506E8E23206A34D0009C4776 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 506E8E0F206A34D0009C4776;
+					};
+					506E8E2E206A34D0009C4776 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 506E8E0F206A34D0009C4776;
+					};
+				};
+			};
+			buildConfigurationList = 506E8E0B206A34D0009C4776 /* Build configuration list for PBXProject "RFID Joey Photo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 506E8E07206A34D0009C4776;
+			productRefGroup = 506E8E11206A34D0009C4776 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				506E8E0F206A34D0009C4776 /* RFID Joey Photo */,
+				506E8E23206A34D0009C4776 /* RFID Joey PhotoTests */,
+				506E8E2E206A34D0009C4776 /* RFID Joey PhotoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		506E8E0E206A34D0009C4776 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506E8E1E206A34D0009C4776 /* LaunchScreen.storyboard in Resources */,
+				506E8E1B206A34D0009C4776 /* Assets.xcassets in Resources */,
+				506E8E19206A34D0009C4776 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506E8E22206A34D0009C4776 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506E8E2D206A34D0009C4776 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		506E8E0C206A34D0009C4776 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506E8E16206A34D0009C4776 /* ViewController.swift in Sources */,
+				506E8E14206A34D0009C4776 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506E8E20206A34D0009C4776 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506E8E29206A34D0009C4776 /* RFID_Joey_PhotoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506E8E2B206A34D0009C4776 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506E8E34206A34D0009C4776 /* RFID_Joey_PhotoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		506E8E26206A34D0009C4776 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 506E8E0F206A34D0009C4776 /* RFID Joey Photo */;
+			targetProxy = 506E8E25206A34D0009C4776 /* PBXContainerItemProxy */;
+		};
+		506E8E31206A34D0009C4776 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 506E8E0F206A34D0009C4776 /* RFID Joey Photo */;
+			targetProxy = 506E8E30206A34D0009C4776 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		506E8E17206A34D0009C4776 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				506E8E18206A34D0009C4776 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		506E8E1C206A34D0009C4776 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				506E8E1D206A34D0009C4776 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		506E8E36206A34D0009C4776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		506E8E37206A34D0009C4776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		506E8E39206A34D0009C4776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RFID Joey Photo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RFID.RFID-Joey-Photo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		506E8E3A206A34D0009C4776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RFID Joey Photo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RFID.RFID-Joey-Photo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		506E8E3C206A34D0009C4776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RFID Joey PhotoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RFID.RFID-Joey-PhotoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFID Joey Photo.app/RFID Joey Photo";
+			};
+			name = Debug;
+		};
+		506E8E3D206A34D0009C4776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RFID Joey PhotoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RFID.RFID-Joey-PhotoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFID Joey Photo.app/RFID Joey Photo";
+			};
+			name = Release;
+		};
+		506E8E3F206A34D0009C4776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RFID Joey PhotoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RFID.RFID-Joey-PhotoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RFID Joey Photo";
+			};
+			name = Debug;
+		};
+		506E8E40206A34D0009C4776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RFID Joey PhotoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RFID.RFID-Joey-PhotoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RFID Joey Photo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		506E8E0B206A34D0009C4776 /* Build configuration list for PBXProject "RFID Joey Photo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506E8E36206A34D0009C4776 /* Debug */,
+				506E8E37206A34D0009C4776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		506E8E38206A34D0009C4776 /* Build configuration list for PBXNativeTarget "RFID Joey Photo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506E8E39206A34D0009C4776 /* Debug */,
+				506E8E3A206A34D0009C4776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		506E8E3B206A34D0009C4776 /* Build configuration list for PBXNativeTarget "RFID Joey PhotoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506E8E3C206A34D0009C4776 /* Debug */,
+				506E8E3D206A34D0009C4776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		506E8E3E206A34D0009C4776 /* Build configuration list for PBXNativeTarget "RFID Joey PhotoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506E8E3F206A34D0009C4776 /* Debug */,
+				506E8E40206A34D0009C4776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 506E8E08206A34D0009C4776 /* Project object */;
+}

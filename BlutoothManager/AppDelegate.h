@@ -16,5 +16,7 @@
 - (void)showLoader;
 - (void)hideLoader;
 
+-(void)sharedTxtFile;
+
 @end
 

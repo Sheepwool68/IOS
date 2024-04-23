@@ -31,8 +31,8 @@
     [CommonAPI resetTodayCountATime];
     
     // Set these variables before launching the app
-    NSString* appKey = @"aoz3k82pelyuhbl";
-    NSString* appSecret = @"rjjd5l7frff42qx";
+    NSString* appKey = @"5fyj4xcrmjiurjs";
+    NSString* appSecret = @"zrllcxsaub5bplw";
     NSString *root = kDBRootDropbox; // Should be set to either kDBRootAppFolder or kDBRootDropbox
     // You can determine if you have App folder access or Full Dropbox along with your consumer key/secret
     // from https://dropbox.com/developers/apps
@@ -64,6 +64,8 @@
     [DBSession setSharedSession:session];
     
     [DBRequest setNetworkRequestDelegate:self];
+    
+    [[self sharedRestClient] createFolder:@"RFID RTS Files"];
     
     if (errorMsg != nil) {
         [[[UIAlertView alloc] initWithTitle:@"Error Configuring Session" message:errorMsg
@@ -98,11 +100,27 @@
 - (void)sharedTxtFile
 {
     NSString * fileName = ((DeviceMemory*)[DeviceMemory createInstance]).shared_fileName;
-    NSString * localDit = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
-    NSString * localPath = [localDit stringByAppendingPathComponent:fileName];
+    if(fileName){
+        if(![[DBSession sharedSession] isLinked]){
+            [[DBSession sharedSession] linkFromController:[UIApplication sharedApplication].keyWindow.rootViewController];
+        }else{
+            NSString * localDit = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+            NSString * localPath = [localDit stringByAppendingPathComponent:fileName];
+            
+            BOOL res = [[NSFileManager defaultManager] fileExistsAtPath:localPath isDirectory:NO];
+            
+            NSString * destDir = @"/RFID RTS Files/";
+            [[self sharedRestClient] uploadFile:fileName toPath:destDir withParentRev:nil fromPath:localPath];
+        }
+    }
     
-    NSString * destDir = @"/";
-    [self.restClient uploadFile:fileName toPath:destDir withParentRev:nil fromPath:localPath];
+}
+- (DBRestClient*)sharedRestClient{
+    if(!self.restClient){
+        self.restClient = [[DBRestClient alloc] initWithSession:[DBSession sharedSession]];
+        self.restClient.delegate = self;
+    }
+    return self.restClient;
 }
 - (void)restClient:(DBRestClient*)client uploadedFile:(NSString *)destPath from:(NSString *)srcPath metadata:(DBMetadata *)metadata
 {
@@ -112,7 +130,14 @@
 {
     NSLog(@"File uploaded to path:%@",error);
 }
-
+- (void)restClient:(DBRestClient*)client createdFolder:(DBMetadata*)folder{
+    NSLog(@"Created Folder Path %@",folder.path);
+    NSLog(@"Created Folder name %@",folder.filename);
+}
+// [error userInfo] contains the root and path
+- (void)restClient:(DBRestClient*)client createFolderFailedWithError:(NSError*)error{
+    NSLog(@"%@",error);
+}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -195,7 +220,7 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)index {
     if (index != alertView.cancelButtonIndex) {
-//        [[DBSession sharedSession] linkUserId:relinkUserId fromController:rootViewController];
+        [[DBSession sharedSession] linkUserId:relinkUserId fromController:[UIApplication sharedApplication].keyWindow.rootViewController];
     }
 }
 
